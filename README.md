@@ -1,9 +1,9 @@
 <h1 align="center">
-    <img alt="proffy-give-classes" src="web/src/assets/images/icons/give-classes.svg" width="350px" />
+    <img alt="proffy-landing" src="web/src/assets/images/icons/landing.svg" width="310px" />
 </h1>
 
 <h4 align="center">
-  🚀 Next Level Week #2
+  Next Level Week #2
 </h4>
 
 <p align="center">
@@ -16,9 +16,10 @@
 
 ## :rocket: Tecnologias
 
-Este projeto contém as eguintes tecnologias:
+Este projeto contém as seguintes tecnologias:
 
 - [React](https://reactjs.org)
+- [TypeScript](https://www.typescriptlang.org/)
 - [Expo](https://expo.io/)
 
 ## 💻 Projeto
