@@ -38,20 +38,52 @@ O Proffy é uma proposta de projeto que facilita a vida de professores e alunos 
 git clone https://github.com/ffzanini/proffy-project.git
 
 ```
-#### Instalação
+#### Instalação Web
 No seu terminal, siga as instruções abaixo para instalar a dependência no projeto.
 ```sh
 
 cd web
+yarn add react-router-dom
 yarn add @types/react-router-dom -D
 
 ```
 É nescessário passar @types pois no projeto é utilizado linguagem tipada (TypeScript).
 
-#### Iniciando a aplicação
+#### Instalação Server
+No seu terminal, siga as instruções abaixo para instalar a dependência no projeto.
+```sh
+
+cd server
+yarn add ts-node-dev -D
+yarn add express
+yarn add @types/express -D
+yarn add knex sqlite3
+yarn add cors
+
+```
+É nescessário passar @types pois no projeto é utilizado linguagem tipada (TypeScript).
+
+#### Instalação Server
+Gerar banco de dados
+```sh
+
+cd server
+yarn knex:migrate
+
+```
+
+#### Iniciando a aplicação Web
 ```sh
 
 cd web
+yarn start
+
+```
+
+#### Iniciando a aplicação Server
+```sh
+
+cd server
 yarn start
 
 ```
