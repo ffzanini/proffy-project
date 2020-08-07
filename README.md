@@ -63,8 +63,7 @@ yarn add cors
 ```
 É nescessário passar @types pois no projeto é utilizado linguagem tipada (TypeScript).
 
-#### Instalação Server
-Gerar banco de dados
+#### Gerar banco de dados
 ```sh
 
 cd server
