@@ -18,17 +18,20 @@
 
 Este projeto contém as seguintes tecnologias:
 
-- [React](https://reactjs.org)
+- [ReactJS](https://reactjs.org)
+- [ReactNative](https://reactnative.dev/)
+- [Axios](https://github.com/axios/axios)
 - [Node.js](https://nodejs.org/en/)
 - [Express](https://expressjs.com/pt-br/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Expo](https://expo.io/)
 - [Knex](http://knexjs.org/)
 - [Sqlite3](https://www.sqlite.org/index.html)
+- [Yarn](https://yarnpkg.com/)
 
 ## 💻 Projeto
 
-O Proffy é uma proposta de projeto que facilita a vida de professores e alunos no aprendizado do dia-a-dia, tornando possível que o aluno encontre professores disponíveis para lecionar uma matéria de seu interesse e entrar em contato com elas via WhatsApp, ou no caso de ser um professor, o mesmo pode se registar e oferecer seus serviços de estudos para novos alunos.
+O Proffy é uma proposta de projeto que facilita a vida de professores e alunos, tornando possível que o aluno favorite e encontre professores disponíveis para lecionar uma matéria de seu interesse e entrar em contato com eles via WhatsApp, ou no caso de ser um professor, o mesmo pode se registar e oferecer seus serviços de estudos para novos alunos.
 
 ## 🔖 Como Executar
 
@@ -45,6 +48,7 @@ No seu terminal, siga as instruções abaixo para instalar a dependência no pro
 cd web
 yarn add react-router-dom
 yarn add @types/react-router-dom -D
+yarn add axios
 
 ```
 É nescessário passar @types pois no projeto é utilizado linguagem tipada (TypeScript).
