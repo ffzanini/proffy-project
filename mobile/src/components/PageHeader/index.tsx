@@ -13,7 +13,7 @@ interface PageHeaderProps {
     headerRight?: ReactNode;
 }
 
-const PageHeader: React.FC<PageHeaderProps> = ({title, children, headerRight})=>{
+const PageHeader: React.FC<PageHeaderProps> = ({title, children, headerRight}) => {
     const {navigate} = useNavigation()
 
     function handleGoBack(){
@@ -24,7 +24,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({title, children, headerRight})=>
     <View style={styles.container}>
         <View style={styles.topBar}>
             <BorderlessButton onPress={handleGoBack}>
-                <Image source={backIcon} resizeMode='contain' />
+                <Image source={backIcon} resizeMode='contain'/>
             </BorderlessButton>
 
             <Image source={logoImg} resizeMode='contain'/>
@@ -37,7 +37,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({title, children, headerRight})=>
 
         {children}
     </View>
-    )
+    );
 }
 
 export default PageHeader;

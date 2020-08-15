@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import TeacherList from '../pages/TeacherList';
 import Favorites from '../pages/Favorites';
@@ -55,7 +56,7 @@ function StudyTabs(){
                 }
             }}/>
         </Navigator>
-    )
+    );
 }
 
 export default StudyTabs;

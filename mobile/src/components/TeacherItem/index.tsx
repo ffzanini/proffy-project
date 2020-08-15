@@ -26,7 +26,7 @@ interface TeacherItemProps{
     favorited: boolean
 }
 
-const TeacherItem: React.FC<TeacherItemProps> = ({ teacher, favorited }) =>{
+const TeacherItem: React.FC<TeacherItemProps> = ({ teacher, favorited }) => {
     const [isFavorited, setIsFavorited] = useState(favorited)
 
     function handleLinkToWhatsapp(){
@@ -64,11 +64,7 @@ const TeacherItem: React.FC<TeacherItemProps> = ({ teacher, favorited }) =>{
     return (
         <View style={styles.container}>
             <View style={styles.profile}>
-                <Image 
-                    style={styles.avatar}
-                    source={{uri: teacher.avatar}}
-                />
-
+                <Image style={styles.avatar} source={{uri: teacher.avatar}}/>
                 <View style={styles.profileInfo}>
                     <Text style={styles.name}>{teacher.name}</Text>
                     <Text style={styles.subject}>{teacher.subject}</Text>
@@ -85,16 +81,8 @@ const TeacherItem: React.FC<TeacherItemProps> = ({ teacher, favorited }) =>{
                     <Text style={styles.priceValue}>R$ {teacher.cost}</Text> 
                 </Text>
                 <View style={styles.buttonsContainer}>
-                    <RectButton 
-                        onPress={handleToggleFavorite}
-                        style={[
-                            styles.favoriteButton, 
-                            isFavorited ? styles.favorited : {},
-                        ]}>
-                        {isFavorited ? 
-                        <Image source={unfavoriteIcon} />
-                        : <Image source={heartOutlineIcon} />
-                    }
+                    <RectButton onPress={handleToggleFavorite} style={[ styles.favoriteButton, isFavorited ? styles.favorited : {}, ]}>
+                        {isFavorited ? <Image source={unfavoriteIcon} /> : <Image source={heartOutlineIcon} />}
                     </RectButton>
                     <RectButton onPress={handleLinkToWhatsapp} style={styles.contactButton}>
                         <Image source={whatsappIcon} />
@@ -105,6 +93,5 @@ const TeacherItem: React.FC<TeacherItemProps> = ({ teacher, favorited }) =>{
         </View>
     );
 }
-
 
 export default TeacherItem;
